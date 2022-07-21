@@ -13,28 +13,62 @@ a{
     text-decoration: none;
 }
 
-
-.container_content{
-    background-color: cornflowerblue;
-    max-width: 840px;
-    margin: 0 auto;
-    text-align: center;
-    margin-top: 80px;
-    padding-top: 20px;
+/* container */
+.container{
     color: white;
+    margin: 100px 0;
 }
 
+
+.container_small,
+.container_large{
+    margin: 0 auto;
+    max-width: 840px;
+    text-align: center;
+}
+
+.container_large{
+    background-color: rgb(18, 100, 73);
+    border-radius: 20px;
+    box-shadow: rgb(10, 58, 42) 2px 2px 15px;
+}
+.container_small{
+    background-color: aliceblue;
+    color: black;
+    border-bottom-left-radius:  20px;
+    border-bottom-right-radius:  20px;
+}
+
+.margin_top{
+    margin-top: 35px;
+}
+/* row */
 .row{
     display: flex;
     justify-content: center;
     gap: 40px;
-    padding: 20px 0;
+    padding: 45px 20px;
 }
 
 .justify_content_space{
     justify-content: space-between;
 }
 
+/* col */
+.col h3 {
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: 200;
+    border-bottom: 1px solid rgb(18, 100, 73);
+    letter-spacing: 0.2em;
+}
+
+.col div{
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: capitalize;
+}
 
 .button_invia{
     margin: 20px 0;
@@ -44,13 +78,43 @@ a{
     justify-content: center;
 }
 
-.container_small,
-.container_ticket{
-    margin: 0 auto;
-    max-width: 840px;
-    text-align: center;
-}
+/* testo */
 
 #text-left{
     text-align: left;
+    padding:  20px;
+}
+
+h1{
+    font-size: 40px;
+    font-weight: 200;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 4px black;
+}
+
+/* button */
+.button_style{
+    background-color: rgb(18, 100, 73);
+    border: 1px solid rgb(18, 100, 73) ;
+    border-radius: 30px;
+    color: white;
+    font-size: 20px;
+    font-weight: 200;
+    padding: 5px 10px;
+    margin: 5px 10px ;
+    transition: 300ms ;
+}
+
+.button_style:hover{
+    cursor: pointer;
+    transform: scale(1.2);
+    background-color: rgb(38, 150, 113);
+}
+
+/* form */
+.form_style{
+    background-color: rgba(10, 58, 42, 0.2);
+    border: none;
+    padding: 5px 10px ;
+    border-radius: 3px;
 }

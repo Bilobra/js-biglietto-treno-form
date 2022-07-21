@@ -36,7 +36,7 @@ buttonElement.addEventListener('click',
     }
     
     nameSurname.innerHTML = formName.value
-    ticketPrice.innerHTML = prezzo
+    ticketPrice.innerHTML = prezzo.toFixed(2) + '\u20AC'
 })
 
 

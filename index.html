@@ -19,36 +19,40 @@
 
     <div class="container">
 
-        <div class="container_content">
+        <div class="container_large">
             <h1>Calcola il prezzo del tuo biglietto</h1>
-            <div class="row">
-                <div class="col">
-                    <h3>Nome e Cognome</h3>
-                    <input id="form_name"type="text" name="name" placeholder="inserisci il tuo nome" value="">
+            <div class="container_small">
 
+                <div class="row">
+                    <div class="col">
+                        <h3>Nome e Cognome</h3>
+                        <input class="form_style" id="form_name"type="text" name="name" placeholder="inserisci il tuo nome" value="">
+    
+                    </div>
+                    <div class="col">
+                        <h3>KM da percorrere</h3>
+                        <input  class="form_style" id="form_km"type="text" name="chilometri" placeholder="chilometri" value="">
+    
+                    </div>
+                    <div class="col">
+                        <h3>Fascio d'età</h3>
+                        <select class="form_style" id="form_age" name="age" id="">
+                            <option value="">Seleziona</option>
+                            <option value="Maggiorenne">Maggiorenne</option>
+                            <option value="Minorenne">Minorenne</option>
+                            <option value="Over65">Over65</option>
+                        </select>
+                    </div>
                 </div>
-                <div class="col">
-                    <h3>KM da percorrere</h3>
-                    <input id="form_km"type="text" name="chilometri" placeholder="chilometri" value="">
-
+                <div class="button_invia">
+                    <input  class="button_style" id="invia" type="submit" value="invia">
+                    <input class="button_style"  type="button" value="annulla">
+    
                 </div>
-                <div class="col">
-                    <h3>Fascio d'età</h3>
-                    <select id="form_age" name="age" id="">
-                        <option value="Maggiorenne">Maggiorenne</option>
-                        <option value="Minorenne">Minorenne</option>
-                        <option value="Over65">Over65</option>
-                    </select>
-                </div>
-            </div>
-            <div class="button_invia">
-                <input id="invia" type="submit" value="invia">
-                <input type="button" value="annulla">
-
             </div>
 
         </div>
-        <div class="container_ticket">
+        <div class="container_large margin_top">
             <h1>Il tuo biglietto</h1>
             <div class="container_small">
                 <h2 id="text-left">dettaglio passeggeri</h2>
