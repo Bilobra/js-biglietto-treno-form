@@ -30,20 +30,31 @@ buttonElement.addEventListener('click',
 
     if(formAge.value == 'Minorenne'){
         prezzo = prezzo - ( prezzo * 0.2 );
+        console.log('prezzo scontanto: ' + prezzo)
         scountTicket.innerHTML= 'sconto  20%';
+        console.log(scountTicket.innerHTML)
        
     } else if (formAge.value == 'Over65'){
         prezzo = prezzo - ( prezzo * 0.4 );
+        console.log('prezzo scontanto: ' + prezzo)
         scountTicket.innerHTML= 'sconto  40%';
+        console.log(scountTicket.innerHTML)
     }
     else{
         prezzo = prezzo
+        console.log('prezzo:' + prezzo)
     }
     
     nameSurname.innerHTML = formName.value;
     ticketPrice.innerHTML = prezzo.toFixed(2) + '\u20AC';
     numberVagone.innerHTML = Math.floor(Math.random() * 50);
     codeVagon.innerHTML = Math.floor(Math.random() * 10000) + 1;
+
+    console.log('passeggero: ' + nameSurname.innerHTML)
+    console.log('numero vagone: ' + numberVagone.innerHTML)
+    console.log('codice vagone: ' + codeVagon.innerHTML)
+    console.log('prezzo finale: ' + ticketPrice.innerHTML)
+
     
     
     
