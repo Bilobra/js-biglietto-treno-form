@@ -13,6 +13,7 @@ let nameSurname = document.getElementById('name_surname')
 let ticketPrice = document.getElementById('ticket_price')
 let scountTicket = document.getElementById('sconto')
 let numberVagone = document.getElementById('carrozza')
+let codeVagon = document.getElementById('code_vagon')
 
 // event + click
 buttonElement.addEventListener('click',
@@ -39,9 +40,12 @@ buttonElement.addEventListener('click',
         prezzo = prezzo
     }
     
-    nameSurname.innerHTML = formName.value
-    ticketPrice.innerHTML = prezzo.toFixed(2) + '\u20AC'
-    numberVagone.innerHTML = Math.floor(Math.random() * 50)
+    nameSurname.innerHTML = formName.value;
+    ticketPrice.innerHTML = prezzo.toFixed(2) + '\u20AC';
+    numberVagone.innerHTML = Math.floor(Math.random() * 50);
+    codeVagon.innerHTML = Math.floor(Math.random() * 10000) + 1;
+    
+    
     
 })
 
