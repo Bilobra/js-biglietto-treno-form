@@ -14,11 +14,35 @@
 <body>
 
     <div class="container">
-        <h1>Calcola il prezzo del tuo biglietto</h1>
+       
         <div class="container_content">
-            <input type="text" name="name" placeholder="inserisci il tuo nome">
-            <input type="text" name="età" placeholder="inserisci la tua età">
-            <input type="submit" value="invia">
+            <h1>Calcola il prezzo del tuo biglietto</h1>
+            <div class="row">
+                <div class="col">
+                    <input type="text" name="name" placeholder="inserisci il tuo nome">
+
+                </div>
+                <div class="col">
+                    <input type="text" name="chilometri" placeholder="chilometri">
+
+                </div>
+                <div class="col">
+                    <select name="age" id="">
+                        <option value="Maggiorenne">Maggiorenne</option>
+                        <option value="Minorenne">Minorenne</option>
+                        <option value="Over65">Over65</option>
+                    </select>
+                </div>
+            </div>
+            <div class="button_invia">
+                <input type="submit" value="invia">
+                <input type="button" value="annulla">
+                
+            </div>
+            
+        </div>
+        <div class="container_ticket">
+
         </div>
     </div>
     

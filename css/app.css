@@ -12,3 +12,31 @@ a{
     color: currentColor;
     text-decoration: none;
 }
+
+.container{
+    background-color: cornflowerblue;
+}
+
+.container_content{
+    max-width: 840px;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 80px;
+    padding-top: 20px;
+    color: white;
+}
+
+.row{
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    padding: 20px 0;
+}
+
+.button_invia{
+    margin: 20px 0;
+    padding-bottom: 50px;
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+}
