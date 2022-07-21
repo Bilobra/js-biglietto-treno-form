@@ -13,11 +13,9 @@ a{
     text-decoration: none;
 }
 
-.container{
-    background-color: cornflowerblue;
-}
 
 .container_content{
+    background-color: cornflowerblue;
     max-width: 840px;
     margin: 0 auto;
     text-align: center;
@@ -33,10 +31,26 @@ a{
     padding: 20px 0;
 }
 
+.justify_content_space{
+    justify-content: space-between;
+}
+
+
 .button_invia{
     margin: 20px 0;
     padding-bottom: 50px;
     display: flex;
     gap: 30px;
     justify-content: center;
+}
+
+.container_small,
+.container_ticket{
+    margin: 0 auto;
+    max-width: 840px;
+    text-align: center;
+}
+
+#text-left{
+    text-align: left;
 }
